@@ -1,0 +1,10 @@
+*.exe
+*.out
+*.o
+*.obj
+build/
+debug/
+.vscode/
+.idea/
+.DS_Store
+*.log

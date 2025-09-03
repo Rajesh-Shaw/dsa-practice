@@ -69,26 +69,70 @@ int main()
 /*
 5. Write a program to swap values of two int variables without using a third variable.
 
-*/
+
 #include<stdio.h>
 int main()
 {
     int a=10,b=20;
     printf("Before swap a=%d and b=%d\n",a,b);
-    a=
+    a= a+b;
+    b= a-b;
+    a= a-b;
     printf("After  swap a=%d and b=%d\n",a,b);
     return 0;
 }
 
+*/
+
 /*
 6. Write a program to swap values of two int variables without using third variable and without using +, - operators.
+
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20;
+    printf("Before swap a=%d and b=%d\n",a,b);
+    a= a*b;
+    b= a/b;
+    a= a/b;
+    printf("After  swap a=%d and b=%d\n",a,b);
+    return 0;
+
+}
 */
 
 /*
 7. Write a program to swap values of two int variables without using third variable and arithmetic operators.
 */
 
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20;
+    printf("Before swap a=%d and b=%d\n",a,b);
+    a= a^b;
+    b= a^b;
+    a= a^b;
+    printf("After  swap a=%d and b=%d\n",a,b);
+    return 0;
+
+}
+    
 
 /*
 8. Write a program to swap values of two int variables in single line arithmetic expression.
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20;
+    printf("Before swap a=%d and b=%d\n",a,b);
+    a= a+b-(b=a);
+    printf("After  swap a=%d and b=%d\n",a,b);
+    return 0;
+
+}
 */

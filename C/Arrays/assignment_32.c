@@ -9,6 +9,18 @@ Assignment-32: Arrays and Functions
 5. Write a function to count the frequency of each element of an array.
 */
 
+#include<stdio.h>
+void swap_two_elements_in_array();
+void total_duplicate_elements();
+void print_unique_element();
+void merge_array();
+void count_frequency_element_of_array();
+int main()
+{
+
+    return 0;
+}
+
 
 /*
 1. Write a function to swap two elements of given array with specified indices.

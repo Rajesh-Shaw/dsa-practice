@@ -10,13 +10,26 @@ Assignment-32: Arrays and Functions
 */
 
 #include<stdio.h>
-void swap_two_elements_in_array();
+void swap_two_elements_in_array(int a[], int n, int index1, int index2);
 void total_duplicate_elements();
 void print_unique_element();
 void merge_array();
 void count_frequency_element_of_array();
 int main()
 {
+    int n, index1, index2;
+    printf("Enter Size of an Array : ");
+    scanf("%d",&n);
+
+    int a[n];
+    printf("Enter %d array values : ",n);
+    for(int i=0; i<n; i++)
+        scanf("%d",&a[i]);
+
+    printf("Enter Two indices for swap values of array : ");
+    scanf("%d%d",&index1, &index2);
+
+    swap_two_elements_in_array(a, n, index1, index2 );
 
     return 0;
 }
@@ -27,6 +40,21 @@ int main()
 
 */
 
+void swap_two_elements_in_array(int a[], int n, int index1, int index2)
+{
+    int t;
+    printf("\nBefore Swap : ");
+    for(int i=0; i<n; i++)
+        printf("%d ",a[i]);
+
+    t=a[index1];
+    a[index1]=a[index2];
+    a[index2]=t;
+
+    printf("\nAfter Swap  : ");
+    for(int i=0; i<n; i++)
+        printf("%d ",a[i]);
+}
 
 
 /*
